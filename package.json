@@ -1,0 +1,7 @@
+{
+  "name": "skgpt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"dev": "concurrently -k -n server,client -c blue,green \"npm:dev:server\" \"npm:dev:client\"", "dev:server": "npm --prefix server run dev", "dev:client": "npm --prefix client run dev"},
+  "devDependencies": {"concurrently": "^9.1.2"}
+}
